@@ -1,9 +1,10 @@
-import FriendBaseControler from './base';
+import FriendsBaseController from './base';
 
-export default FriendBaseControler.extend({
+export default FriendsBaseController.extend({
   actions: {
     cancel() {
       this.transitionToRoute('friends.show', this.get('model'));
+
       return false;
     }
   }
